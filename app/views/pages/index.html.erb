@@ -1,12 +1,12 @@
 <div class="">
   <img
-    class="absolute inset-0 object-cover w-full h-4/5"
+    class="absolute object-cover w-full h-4/5"
     src="https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470"
   />
 
   <div class="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-gray-400 sm:to-transparent h-4/5"></div>
 
-  <div class="absolute top-0 right-0 flex justify-end">
+  <div class="relative flex justify-end">
     <a href="https://www.linkedin.com/in/liliantongli/" target="_blank" class="py-5">
     <svg
       aria-hidden="true"
@@ -60,8 +60,8 @@
     </a>
   </div>
 
-  <div class="relative mx-auto flex justify-center">
-    <div class="w-full text-center mt-12">
+  <div class="relative flex justify-center">
+    <div class="w-full text-center mt-24">
       <h1 class="lg:text-5xl text-3xl text-white font-main font-light" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2)">
         Hi there, I'm <strong class="font-bold"> Lilian Li</strong>
       </h1>
@@ -74,5 +74,34 @@
   <div class="flex justify-center mt-5">
     <svg t="1652966443429" class="relative icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8669" width="200" height="200"><path d="M512 785.066667a17.015467 17.015467 0 0 1-12.066133-5.000534l-256-256a17.0496 17.0496 0 1 1 24.132266-24.132266L512 743.867733l243.933867-243.933866a17.0496 17.0496 0 1 1 24.132266 24.132266l-256 256A17.015467 17.015467 0 0 1 512 785.066667z m0-256a17.015467 17.015467 0 0 1-12.066133-5.000534l-256-256a17.0496 17.0496 0 1 1 24.132266-24.132266L512 487.867733l243.933867-243.933866a17.0496 17.0496 0 1 1 24.132266 24.132266l-256 256A17.015467 17.015467 0 0 1 512 529.066667z" p-id="8670" fill="#ffffff"></path></svg>
   </div>
+</div>
 
+<div class="flex lg:flex-row flex-wrap">
+  <div class="lg:basis-1/2 lg:pt-32 lg:px-24 pt-20 px-12">
+    <h1 class="lg:text-3xl text-2xl font-main text-black text-center font-light">Recently graduated from <strong class="text-rose-600 font-bold">Le Wagon</strong> Shanghai</h1>
+    <h1 class="lg:text-2xl text-lg font-main text-gray-600 text-center font-light py-5">Some of the skills I picked up:</h1>
+    <div>
+      <%= image_tag ("coding.png"), class:"w-6 h-6 inline-block" %>
+      <h1 class="inline-block lg:text-lg font-main">Ruby & Ruby on Rails</h1>
+    </div>
+    <div>
+      <%= image_tag ("coding.png"), class:"w-6 h-6 inline-block" %>
+      <h1 class="inline-block lg:text-lg font-main">SQL</h1>
+    </div>
+    <div>
+      <%= image_tag ("coding.png"), class:"w-6 h-6 inline-block" %>
+      <h1 class="inline-block lg:text-lg font-main">JavaScript</h1>
+    </div>
+    <div>
+      <%= image_tag ("coding.png"), class:"w-6 h-6 inline-block" %>
+      <h1 class="inline-block lg:text-lg font-main">WeChat Mini Program</h1>
+    </div>
+    <a href="">
+      <h1 class="text-lg font-main italic font-black text-rose-600 p-3 hover:text-gray-600">and so much more...</h1>
+    </a>
+  </div>
+
+  <div class="lg:w-2/5 lg:p-20 px-10 lg:basis-1/2">
+    <%= image_tag ("lewagon.jpg"), class:"rounded-2xl" %>
+  </div>
 </div>
